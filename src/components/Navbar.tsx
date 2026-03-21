@@ -17,22 +17,27 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('top')
 
   useEffect(() => {
-    const observers = navItems.map(({ id, path }) => {
-      const el = document.getElementById(id)
-      if (!el) return null
-      const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id)
-            history.replaceState(null, '', path)
-          }
-        },
-        { rootMargin: '-20% 0px -75% 0px' }
-      )
-      obs.observe(el)
-      return obs
-    })
-    return () => observers.forEach((o) => o?.disconnect())
+    const handleScroll = () => {
+      const scrollY = window.scrollY + window.innerHeight * 0.35
+      let current = navItems[0].id
+
+      for (const { id } of navItems) {
+        const el = document.getElementById(id)
+        if (el && el.offsetTop <= scrollY) {
+          current = id
+        }
+      }
+
+      const item = navItems.find(({ id }) => id === current)
+      if (item) {
+        setActiveSection(current)
+        history.replaceState(null, '', item.path)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const linkClass = (id: string) =>
