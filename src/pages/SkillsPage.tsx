@@ -2,7 +2,7 @@ const skills = [
   { category: 'Languages', items: ['Python', 'JavaScript', 'SQL'] },
   { category: 'AI / ML', items: ['LangGraph', 'LangChain', 'Deep Agent', 'RAG', 'Google ADK', "Agentic workflows"] },
   { category: 'Frontend', items: ['React.js', 'HTML', 'CSS'] },
-  { category: 'Backend', items: ['Node.js', 'Express.js', 'Redis', 'Kafka', 'Postgres'] },
+  { category: 'Backend', items: ['Node.js', 'Express.js', 'JAVA', 'Redis', 'Kafka', 'Postgres'] },
   { category: 'DevOps & CI/CD', items: ['Docker', 'Kubernetes', 'GitLab CI/CD'] },
   { category: 'Cloud Technologies', items: ['GCP'] },
   { category: 'Other', items: ['Performance Tuning', 'Problem Solving', 'Analytical Skills'] },
@@ -22,7 +22,7 @@ export default function SkillsPage() {
               {items.map((skill) => (
                 <li
                   key={skill}
-                  className="cursor-default rounded-full border border-gray-200 px-3 py-1 text-xs text-gray-600 transition-colors hover:border-black hover:bg-black hover:text-white"
+                  className="cursor-default rounded-full border border-black bg-black px-3 py-1 text-xs text-white"
                 >
                   {skill}
                 </li>

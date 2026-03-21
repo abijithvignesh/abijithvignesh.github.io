@@ -7,20 +7,21 @@ export default function HomePage() {
       <h1 className="text-8xl font-black tracking-tight text-black sm:text-9xl">
         Abijith Vignesh
       </h1>
-      <p className="mt-3 text-lg text-gray-400">developer · designer · creator</p>
+      <p className="mt-3 text-lg text-gray-400">engineer · builder · problem solver</p>
 
       <div className="mt-8 flex items-center gap-2">
         <span className="h-2 w-2 rounded-full bg-green-400" />
-        <span className="text-sm text-gray-400">Available for small to medium sized projects</span>
+        <span className="text-sm text-gray-400">Open for collaborations.</span>
       </div>
 
       <p className="mt-4 max-w-sm text-gray-600 leading-relaxed">
-        I'm a developer focused on React, TypeScript, and clean UI. I'm currently
-        building thoughtful web experiences. Swap in your bio here.
+        I build AI-powered systems and the web experiences around them.
+        Focused on agentic workflows, full-stack development, and
+        shipping things that actually work and scale.
       </p>
 
       <a
-        href="mailto:you@example.com"
+        href="mailto:abijithvignesh@gmail.com"
         className="mt-8 block w-72 rounded-sm bg-black py-3 text-sm font-medium text-white hover:bg-gray-900"
       >
         Say Hello

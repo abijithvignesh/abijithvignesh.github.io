@@ -11,29 +11,33 @@ export default function AboutPage() {
           </h2>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            I'm a developer focused on React, TypeScript, and clean UI. I enjoy crafting
-            thoughtful web experiences that are fast, accessible, and a pleasure to use.
+            I'm a developer with a strong focus on AI/ML engineering and full-stack
+            development. I work with Python, React, and a range of AI tooling —
+            from building RAG pipelines and agentic workflows with LangGraph and
+            LangChain, to designing scalable backends with Node.js, JAVA, Kafka, and Postgres.
+            I care about systems that are fast, reliable, and genuinely useful.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
-            Outside of coding I enjoy exploring new technologies and building side projects
-            that scratch real itches.
+            Outside of work, I'm usually exploring what's next in AI, tinkering
+            with multi-agent architectures, building side projects that scratch
+            real itches, or figuring out what becomes possible when good engineering
+            meets good design.
           </p>
 
-          {/* Work Experience */}
-          <div className="mt-10">
-            <p className="text-sm font-bold tracking-wide">Work Experience</p>
-            <div className="mt-3 space-y-3 text-sm text-gray-500">
-              <div>
-                <p className="text-gray-800">Your Role</p>
-                <p>Company &nbsp;·&nbsp; 20XX –</p>
-              </div>
-              <div>
-                <p className="text-gray-800">Previous Role</p>
-                <p>Company &nbsp;·&nbsp; 20XX – 20XX</p>
-              </div>
-            </div>
-          </div>
+          {/* Resume */}
+          <a
+            href="/Abijith2026resume.pdf"
+            download
+            className="mt-10 inline-flex items-center gap-2 rounded-lg border border-gray-800 px-4 py-2 text-sm font-medium text-gray-800 hover:bg-black hover:text-white transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Résumé
+          </a>
         </div>
 
         {/* Right: photo */}
