@@ -1,8 +1,8 @@
 const skills = [
-  { category: 'Languages', items: ['Python', 'JavaScript', 'SQL'] },
+  { category: 'Languages', items: ['Python', 'JavaScript', 'JAVA', 'SQL'] },
   { category: 'AI / ML', items: ['LangGraph', 'LangChain', 'Deep Agent', 'RAG', 'Google ADK', "Agentic workflows"] },
   { category: 'Frontend', items: ['React.js', 'HTML', 'CSS'] },
-  { category: 'Backend', items: ['Node.js', 'Express.js', 'JAVA', 'Redis', 'Kafka', 'Postgres'] },
+  { category: 'Backend', items: ['Node.js', 'Express.js', 'Redis', 'Kafka', 'Postgres'] },
   { category: 'DevOps & CI/CD', items: ['Docker', 'Kubernetes', 'GitLab CI/CD'] },
   { category: 'Cloud Technologies', items: ['GCP'] },
   { category: 'Other', items: ['Performance Tuning', 'Problem Solving', 'Analytical Skills'] },
