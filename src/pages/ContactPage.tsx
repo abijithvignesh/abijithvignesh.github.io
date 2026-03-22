@@ -2,7 +2,7 @@ export default function ContactPage() {
   return (
     <section id="contact" className="scroll-mt-24 border-t border-gray-200 py-14">
       <h2 className="text-lg font-semibold tracking-tight">Contact</h2>
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <a
           className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-gray-300"
           href="mailto:abijithvignesh@gmail.com"
